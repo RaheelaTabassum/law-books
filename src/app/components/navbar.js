@@ -1,5 +1,5 @@
 "use client";
-import {menubar} from 'primereact/menubar';
+import {Menubar} from 'primereact/menubar';
 
 export default function Navbar() {
     const items=[
@@ -11,5 +11,8 @@ export default function Navbar() {
     const start=<img alt="logo" src="/logo.png" height="40" className="mr-2" />;
     const end =<span className="font-bold">LawBooks</span>;
 
-    return <Menubar model={items} start={start} end={end} />;
+    return(<div className="card">
+        <Menubar model={items} />
+    </div> 
+    );
 }
